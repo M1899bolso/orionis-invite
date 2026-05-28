@@ -409,8 +409,8 @@ function enviarAGoogleForms(nombre, telefono, tipo) {
 
 async function submitInfoForm(e){
   e.preventDefault();
-  const nombre = document.getElementById('info-nombre') ? document.getElementById('info-nombre').value.trim() : '';
-  const tel = document.getElementById('info-tel') ? document.getElementById('info-tel').value.trim() : '';
+  const nombre = document.getElementById('if-nombre') ? document.getElementById('if-nombre').value.trim() : '';
+  const tel = document.getElementById('if-tel') ? document.getElementById('if-tel').value.trim() : '';
   const btn = e.target.querySelector('button[type=submit]');
   if(btn){ btn.disabled=true; btn.textContent='Enviando...'; }
   enviarAGoogleForms(nombre || '(no indicado)', tel || '(no indicado)', 'Quiere informacion');
