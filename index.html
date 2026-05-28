@@ -390,9 +390,8 @@ function stars(id,sc,dens){
   resize();window.addEventListener('resize',resize);requestAnimationFrame(draw);
 }
 stars('c0','rgba(21,33,64,X)',5800);
-  .getPropertyValue('--navy').trim(),0.5);
 stars('c1','rgba(238,243,248,X)',4400);
-  stars('c2',getComputedStyle(document.documentElement).getPropertyValue('--blue').trim(),0.6);
+stars('c2',getComputedStyle(document.documentElement).getPropertyValue('--blue').trim(),0.6);
 
 // ── Scroll Reveal ──
 const io=new IntersectionObserver(es=>es.forEach(e=>{
